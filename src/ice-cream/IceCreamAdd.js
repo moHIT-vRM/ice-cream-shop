@@ -36,7 +36,6 @@ const IceCreamAdd = () => {
       });
     })();
   }, [menuIt]);
-  // console.log(Newm);
 
   const {  name, price, inStock, description, quantity, iceCream } = newIceCream;
 
