@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Footer } from "./structure/Footer";
+import { Header } from "./structure/Header";
+import { Menu } from "./ice-cream/Menu";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { EditiceCream } from "./ice-cream/EditiceCream";
+import IceCreams from "./ice-cream/IceCreams";
+import IceCreamAdd from './ice-cream/IceCreamAdd'
 
-function App() {
+
+// import { EditiceCream } from "./ice-cream/EditiceCream";
+// import { NavLink } from "react-router-dom";
+
+// if some one type invalid url then they automatically redirect to the home page.
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <React.Fragment>
+      {/* <Menu /> */}
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Menu />} exact />
+          <Route path="/ice-creams" element={<IceCreams />} />
+          <Route path={`/menu-items/:id`} element={<EditiceCream />} exact />
+          <Route path={`/menu-items/newlist/:id`} element={<IceCreamAdd />} exact />
+          {/* <Redirect to="/" /> */}
+          {/* here in the previous version of the react router we are using the redirect component but now in the react router version we are using the navigate */}
 
-export default App;
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export { App };

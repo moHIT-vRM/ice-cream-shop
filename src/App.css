@@ -1,38 +1,293 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: cornerstone;
+  src: url(./assets/fonts/Cornerstone.ttf);
+}
+@font-face {
+  font-family: geoman;
+  src: url(./assets/fonts/geomanist-book.ttf);
+}
+
+body {
+  background: #ff71ba;
+  font-family: "cornerstone";
+}
+/* header */
+
+.heading {
+  /* border: solid 2px red; */
+  /* background-color: rgb(255, 129, 228); */
+  /* background-color: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+  /* box-shadow: 0px 10px 10px white; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /* flex-direction: column; */
+}
+
+.head_img {
+  /* padding-top: 10px;
+  border: 2px solid; */
+  height: 40px;
+
+  width: 40px;
+}
+
+h1 {
+  color: cyan;
+
+  /* font-family: "cornerstone"; */
+  margin: 10px 0px 0px 10px;
+}
+h1 img {
+  margin-right: 20px;
+}
+
+.active_cla {
+  /* border: 2px solid gold; */
+  color: deeppink;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active_cla2:hover {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add_section {
+  text-align: center;
+  /* border: 2px solid brown; */
+  background-color: white;
+  width: 58%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 45px;
+  /* border: 2px solid orangered; */
+
+  height: 40px;
+  /* font-size: 16px;
+  border: none;
+    font-family: "cornerstone";  */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_inp1 {
+  /* border: 2px solid lime; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 80%;
+  border-radius: 50px;
+  font-family: "geoman";
+  text-decoration: underline;
+  color: deeppink;
+}
+.main_inp2 {
+  display: flex;
+  padding-left: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: center; */
+  width: 80%;
+  height: 100%;
+  /* border: 2px solid orange; */
+  font-family: "geoman";
+}
+
+/* another section    */
+
+.main_menu {
+  /* color: black; */
+  /* border: 2px solid purple; */
+  text-align: center;
+  margin: 40px auto 20px;
+  /* font-family: 'Josefin Sans', sans-serif; */
+
+  /* font-family: "gemon"; */
+}
+
+/* card section  */
+
+.ice_section {
+  /* display: flex;
+  border: solid 2px;
+  width: 100vw; */
+  width: 60%;
+  padding: 20px;
+  height: 720px;
+  /* border: solid 2px green; */
+  margin: 0px auto;
+  display: grid;
+  /* grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px; */
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-row-gap: 35px;
+  grid-column-gap: 35px; */
+  grid-gap: 30px;
+  overflow-y: scroll;
+  -webkit-appearance: none;
+  list-style: none;
+}
+
+.edit_ice{
+  height: 940px;
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.ice_section > li {
+  height: 320px;
+}
+.card_cont {
+  /* border: 2px solid red; */
+  /* padding: 10px; */
+  background-color: white;
+  border-radius: 12px;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  height: 100%;
+
+  /* height: 200px;
+  width: 200px; */
+  /* background-color: white; */
+}
+.edit_card{
+  height: 280px;
+  /* border: 2px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
+
+.card_cont:hover {
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img {
+  height: 60%;
+  /* border: 2px solid cyan; */
+  border-radius: 12px;
+  border-bottom: 0.5px solid #bbb;
+  background-color: rgb(255, 235, 235);
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img2{
+  height: 70%;
+  border-radius: 12px;
+  border-bottom: 0.5px solid #bbb;
+  background-color: rgb(255, 235, 235);
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.text2{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 10px;
+  padding-left: 10px; */
+  padding: 16px;
+  /* border-top: solid 2px green; */
+ 
+  font-size: 10px;
+  justify-content: space-around;
+  letter-spacing: 0.4px;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 10px;
+  padding-left: 10px; */
+  padding: 16px;
+  /* border-top: solid 2px green; */
+  height: 40%;
+  font-size: 10px;
+  justify-content: space-around;
+  letter-spacing: 0.4px;
+}
+
+.all_ice {
+  /* margin-top: 50px; */
+  /* border: 2px solid red; */
+  height: 100px;
+  width: 100px;
+}
+.title {
+  font-size: 20px;
+  font-family: "geoman";
+  /* text-decoration: none; */
+}
+.title2 {
+  /* text-align: center; */
+  font-size: 18px;
+  font-family: "geoman";
+  /* text-decoration: none; */
+}
+a {
+  text-decoration: none;
+  outline: 0;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+
+  outline: 0;
+  color: black;
+}
+.price {
+  display: inline-block;
+}
+#stock {
+  font-size: 12px;
+  font-family: "geoman";
+  color: #333;
+}
+.des {
+  font-size: 12px;
+  font-family: "geoman";
+  color: #333;
+}
+
+/* footer */
+
+.last_foot {
+  text-align: center;
+  /* border: 2px solid grey; */
+  margin-bottom: 15px;
+}
+
+
+
+/* menu list */
+
+.menu_start{
+  text-align: center;
+  margin: 40px auto 20px;
+  font-size: 22px;
 }

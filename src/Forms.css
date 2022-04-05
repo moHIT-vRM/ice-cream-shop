@@ -1,0 +1,241 @@
+/*  here we are creating the form css */
+
+.form_main {
+  font-family: geoman;
+  height: 400px;
+  text-align: center;
+  margin: 30px auto;
+  width: 58%;
+  border-radius: 25px;
+  background-color: white;
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.form_img {
+  /* border: 2px solid lime; */
+  width: 28%;
+  border-radius: 12px;
+  border-right: 0.5px solid #bbb;
+  background-color: rgb(255, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_img > .all_ice {
+  width: 120px;
+  height: 120px;
+}
+
+.check_form{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  height: 80%;
+}
+
+/* ````````````````````````````````````` */
+
+/* ``````````````````````````` */
+.form_content {
+  /* border: 2px solid orange; */
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: inherit;
+}
+
+.form_sec1 {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20%;
+}
+
+.form_sec1 > label {
+  /* border: 2px solid; */
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.form_sec1 > span {
+  /* border: 2px solid; */
+  display: flex;
+  /* padding-left: 5px; */
+  align-items: flex-start;
+  width: 60%;
+}
+.form_sec2 {
+  /* border: 2px solid purple;  */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  align-items: center;
+  height: 20%;
+}
+.form_sec2 > label {
+  /* border: 2px solid; */
+  width: 28%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.form_sec2 > div {
+  width: 59%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form_sec2 > div > textarea {
+  /* border: 2px solid; */
+  width: 96%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3px;
+  resize: none;
+  /* font-family: "gemon"; */
+  font-size: 12px;
+  /* letter-spacing: 0.5px; */
+  padding: 6px;
+  
+}
+
+.form_sec3 {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+}
+.form_sec3 > label {
+  /* border: 2px solid; */
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.form_sec3 > div {
+  /* border: 2px solid; */
+  width: 60%;
+}
+
+.form_sec3 > div > input {
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px;
+  /* width: 60%; */
+}
+.form_sec4 {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+}
+
+.form_sec4 > label {
+  /* border: 2px solid; */
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.form_sec4 > div {
+  width: 60%;
+  /* border: 2px solid; */
+}
+.form_sec4 > div > select {
+  /* border: 2px solid; */
+  /* width: 60%; */
+  display: flex;
+  justify-content: flex-start;
+  width: 96%;
+  height: 22px;
+}
+
+.form_sec5 {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+}
+.form_sec5 > label {
+  /* border: 2px solid; */
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.form_sec5 > div {
+  /* border: 2px solid; */
+  width: 60%;
+}
+.form_sec5 > div input {
+  display: flex;
+  justify-content: flex-start;
+  width: 96%;
+  height: 22px;
+  padding: 3px;
+}
+.form_sec6 {
+  /* border: 2px solid purple; */
+  height: 20%;
+}
+.ok {
+  background-color: rgb(12, 211, 211);
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  margin: 5px;
+  color: white;
+  border: none;
+}
+.none {
+  background-color: rgb(255, 0, 0);
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  margin: 5px;
+  color: white;
+  border: none;
+}
+
+/* ````````````````````````````````````` */
+/* 
+.form_cont1 {
+  border: 2px solid orange;
+  width: 25%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 10px;
+}
+.form_cont2 {
+  border: 2px solid purple;
+  background-color: brown;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.form_sec1 > label {
+  border: 2px solid green;
+} */
+
+/* .form_sec2 >textarea{
+    resize: none;
+} */
+
+/* ````````````````````````````````` */
